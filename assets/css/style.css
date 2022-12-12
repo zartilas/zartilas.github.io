@@ -305,7 +305,7 @@ hr {
 
 #hero:before {
   content: "";
-  background:rgba(179, 177, 177, 0.8); 
+  background:rgba(200, 200, 200, 0.8); 
   /* background: rgba(255, 255, 255, 0.8); */
   position: absolute;
   bottom: 0;
@@ -1298,7 +1298,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background:rgba(179, 177, 177, 0.8); 
+  background:rgba(200, 200, 200, 0.8); 
   color: #45505b;
   font-size: 14px;
   text-align: center;

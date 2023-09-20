@@ -1169,12 +1169,14 @@ section {
 
 .contact .info .email,
 .contact .info .telegram,
+.contact .info .pigeon,
 .contact .info .linkedin,
 .contact .info .address {
   margin-top: 30px;
 }
 
 .contact .info .email:hover i,
+.contact .info .pigeon:hover i,
 .contact .info .address:hover i,
 .contact .info .telegram:hover i,
 .contact .info .linkedin:hover i,

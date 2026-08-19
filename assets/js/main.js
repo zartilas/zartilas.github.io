@@ -262,8 +262,31 @@
   });
 
   /**
-   * Initiate Pure Counter 
+   * Initiate Pure Counter
    */
   new PureCounter();
 
-})()
+  /**
+   * Custom: Dynamic year calculations
+   */
+  const updateYears = () => {
+    // Years since diving certification (2017)
+    const divingYearsEl = select('#currentYears');
+    if (divingYearsEl) {
+      divingYearsEl.textContent = String(new Date().getFullYear() - 2017);
+    }
+    // Current year for footer copyright
+    const footerYearEl = select('#currentYear');
+    if (footerYearEl) {
+      footerYearEl.textContent = String(new Date().getFullYear());
+    }
+  };
+
+  // Run on page load
+  window.addEventListener('load', updateYears);
+  // Run immediately if page already loaded
+  if (document.readyState !== 'loading') {
+    updateYears();
+  }
+
+})();
